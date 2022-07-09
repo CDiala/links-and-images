@@ -1,0 +1,84 @@
+/*
+d) Within that style.css add properties to customize the page to your liking, make sure that
+you include the following:
+    a. Background color             done
+    b. Text color                   done
+    c. Font family                  done
+    d. Font size                    done
+    e. Borders                      done
+    f. Rounded corners on images    done
+e) Remember that you can customize the pages to your liking, you will not be graded in any way on how it looks as it’s a personal preference, but make sure to use at least all of the properties mentioned above in the list
+*/
+
+body {
+  background-color: rgb(120, 161, 168);
+}
+
+img {
+  border: 3px outset rgb(56, 32, 208);
+  border-radius: 10px;
+  position: absolute;
+  top: calc(50vh - 183px / 2);
+  right: calc(50vw - 275px / 2);
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  /* transition: all ease-in-out 2s; */
+}
+
+h1.header {
+  color: blue;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 72px;
+}
+
+h1#myId.header {
+  color: black;
+  animation-name: color;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+a {
+  font-size: 24px;
+}
+
+img:hover {
+  transform: rotate(45deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes color {
+  0% {
+    color: orange;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: blue;
+  }
+  100% {
+    color: indigo;
+  }
+}
